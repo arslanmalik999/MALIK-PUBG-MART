@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MALIK PUBG MART</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #000428, #004e92);
+      color: white;
+      overflow-x: hidden;
+      text-align: center;
+    }
+
+    h1 {
+      animation: glow 2s ease-in-out infinite alternate;
+      margin: 30px 0;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #fff; }
+      to { text-shadow: 0 0 20px #0ff, 0 0 30px #0ff; }
+    }
+
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .service-button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .service-button:hover {
+      transform: scale(1.1);
+    }
+
+    .service-button img {
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+
+    .ratelist {
+      display: none;
+      margin-top: 20px;
+    }
+
+    .ratelist img {
+      max-width: 90%;
+      border: 2px solid white;
+      border-radius: 10px;
+    }
+
+    .contact {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-top: 1px solid #444;
+    }
+
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      border-radius: 50%;
+      padding: 15px;
+      z-index: 1000;
+      transition: transform 0.2s;
+    }
+
+    .whatsapp-button img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .whatsapp-button:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>MALIK PUBG MART</h1>
+
+  <div class="button-container">
+    <button class="service-button" onclick="showRate('uc')">
+      <img src="https://drive.google.com/uc?export=view&id=1s3dhkzNf4yHQ4zxnxWJH6m6kMVt6thxZ" alt="PUBG UC"/>
+    </button>
+    <button class="service-button">
+      <img src="https://drive.google.com/uc?export=view&id=1upxX3Ab16BfBELrfQ4x1ox29gmx1rhDy" alt="PUBG Accounts"/>
+    </button>
+    <button class="service-button">
+      <img src="https://drive.google.com/uc?export=view&id=1wM1wz_yQi2XkJpDCcZzG3TcJDlgX10aO" alt="PUBG Popularity"/>
+    </button>
+    <button class="service-button">
+      <img src="https://drive.google.com/uc?export=view&id=1CYXqqY3hgDxFuOe3AU_qfB3hkf0Aps31" alt="Home Votes"/>
+    </button>
+    <button class="service-button" onclick="showRate('yalla')">
+      <img src="https://drive.google.com/uc?export=view&id=19BqqjQlMapVsjHL7emaXuM8AL2Jt2Fwb" alt="Yalla Ludo"/>
+    </button>
+  </div>
+
+  <div id="uc" class="ratelist">
+    <img src="https://drive.google.com/uc?export=view&id=1wFSrmqGqoed5zdNt41hrL-xyPUmJ5n10" alt="UC Ratelist"/>
+  </div>
+  <div id="yalla" class="ratelist">
+    <img src="https://drive.google.com/uc?export=view&id=1ssTbuydXsN-GI0_aKQJAA9QFhuztV2BO" alt="Yalla Ratelist"/>
+  </div>
+
+  <div class="contact">
+    <p>WhatsApp: 0305-7913067</p>
+    <p>Email: arslanmm425@gmail.com</p>
+  </div>
+
+  <a href="https://wa.me/923057913067" class="whatsapp-button" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp">
+  </a>
+
+  <script>
+    function showRate(id) {
+      const all = document.querySelectorAll('.ratelist');
+      all.forEach(div => div.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
